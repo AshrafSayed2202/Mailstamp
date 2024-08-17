@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #DEEFFF;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+section {}
+
+.main-btn {
+    background: linear-gradient(151.54deg, #6192DB 14.21%, #2B34F0 68.04%);
+    padding: 0px 12px;
+    height: 40px;
+    border-radius: 27px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+header.container {
+    background-color: #FFFFFF;
+    border: 1px solid #ECECED;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    border-radius: 35px;
+    font-weight: 600;
+    color: #0E0200
+}
+
+header.container .logo,
+header.container nav ul,
+header.container nav,
+header.container .nav-btn {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+header.container .logo {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+header.container nav {
+    flex: 1;
+}
+
+header.container nav ul {
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+header.container nav ul li {
+    padding: 5px;
+}
+
+header.container nav ul li a {
+    text-decoration: none;
+    color: #0E0200;
+}
+
+header.container .nav-btn {
+    gap: 15px;
+}
+
+section.landing {}
+
+section.landing .landing-text {
+    text-align: center;
+    padding-top: 130px;
+    width: 30%;
+    margin: auto;
+}
+
+section.landing .landing-text h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3rem;
+    margin-bottom: 30px;
+}
+
+section.landing .landing-text p {
+    margin-bottom: 30px;
+}
+
+section.landing .landing-text .main-btn {
+    font-size: 18px;
+    height: 55px;
+    width: 240px;
+    border-radius: 35px;
+}
+
+section.landing .landing-text h1 span {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(128.45deg, #6192DB 12.61%, #2B34F0 45.11%);
+}

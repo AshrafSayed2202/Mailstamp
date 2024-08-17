@@ -7,6 +7,11 @@
     font-family: sans-serif;
 }
 
+img {
+    object-fit: cover;
+    border: 1px solid #2B34F0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -123,4 +128,15 @@ section.landing .landing-text h1 span {
     color: transparent;
     background-clip: text;
     background-image: linear-gradient(128.45deg, #6192DB 12.61%, #2B34F0 45.11%);
+}
+
+section.landing img.wave {
+    width: 100%;
+}
+
+section.landing img.landing-image {
+    position: absolute;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, 200px);
 }

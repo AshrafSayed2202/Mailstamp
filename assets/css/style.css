@@ -28,8 +28,6 @@ body {
     width: 100%;
 }
 
-section {}
-
 .main-btn {
     background: linear-gradient(151.54deg, #6192DB 14.21%, #2B34F0 68.04%);
     padding: 0px 12px;
@@ -48,6 +46,7 @@ header.container {
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 100;
     top: 15px;
     left: 50%;
     transform: translateX(-50%);
@@ -96,35 +95,37 @@ header.container .nav-btn {
     gap: 15px;
 }
 
-section.landing {}
-
-section.landing .landing-text {
+.section-header {
     text-align: center;
-    padding-top: 130px;
     width: 30%;
     margin: auto;
 }
 
-section.landing .landing-text h1 {
+section.landing .section-header {
+    padding-top: 130px;
+}
+
+.section-header h1 {
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: 900;
     line-height: 3rem;
     margin-bottom: 30px;
+    letter-spacing: -4px;
 }
 
-section.landing .landing-text p {
+.section-header p {
     margin-bottom: 30px;
 }
 
-section.landing .landing-text .main-btn {
+.section-header .main-btn {
     font-size: 18px;
     height: 55px;
     width: 240px;
     border-radius: 35px;
 }
 
-section.landing .landing-text h1 span {
+.section-header h1 span {
     color: transparent;
     background-clip: text;
     background-image: linear-gradient(128.45deg, #6192DB 12.61%, #2B34F0 45.11%);
@@ -139,4 +140,143 @@ section.landing img.landing-image {
     width: 70%;
     left: 50%;
     transform: translate(-50%, 200px);
+}
+
+section.how {
+    padding-top: 300px;
+    background-color: #FFFFFF;
+}
+
+section.how .section-header {
+    padding-bottom: 40px;
+}
+
+.how-cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.how-card {
+    width: calc((100% /3) - 10px);
+}
+
+.how-card img.how {
+    border-radius: 18px;
+    border: 1px solid hsla(0, 0%, 0%, 0.05);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.how-text.section-header {
+    width: 100%;
+}
+
+.how-text.section-header h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    letter-spacing: -1px;
+}
+
+.how-text.section-header p {
+    color: #5F6368;
+    font-size: 14px;
+}
+
+section.boost {
+    background: linear-gradient(180deg, #DFE0FF 0%, #E2E3FF 0.01%, #ECF6FF 100%);
+    padding: 120px 0;
+}
+
+section.boost .section-header {
+    width: 50%;
+}
+
+.boost-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.boost-text {
+    width: 379px;
+}
+
+.boost-text h3 {
+    background-image: linear-gradient(160.21deg, #8061DB 14.88%, #2B34F0 96.45%);
+    background-clip: text;
+    color: transparent;
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.boost-text p {
+    color: #5F6368;
+}
+
+.boost-item .orb {
+    background-image: url(/assets/images/boost-orb.png);
+    background-position: center;
+    background-size: cover;
+    height: 615px;
+    width: 615px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.orb-card {
+    box-shadow: 0px -8px 16px 0px #00000014;
+    box-shadow: 0px 0px 4px 0px #0000000A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 17px;
+    background: #FFFFFF;
+    padding: 10px;
+    width: 70%;
+}
+
+.orb-card .to,
+.orb-card .user,
+.orb-card .subject {
+    border-radius: 5px;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.orb-card .user {
+    padding: 0;
+    margin-left: 35px;
+    gap: 10px;
+}
+
+.orb-card .user img {
+    border-radius: 50%;
+}
+
+.orb-card .user h4,
+.orb-card .subject b {
+    text-transform: uppercase;
+}
+
+.orb-card .user span {
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.orb-card p {
+    padding: 5px 25px;
+    font-size: 14px;
+    opacity: 0.8;
 }

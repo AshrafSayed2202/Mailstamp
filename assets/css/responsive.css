@@ -30,6 +30,10 @@
 }
 
 @media (width < 769px) {
+    .section-header h1 {
+        line-height: normal;
+    }
+
     header.container nav ul {
         flex-direction: column;
         position: fixed;
@@ -59,6 +63,10 @@
     section.landing .section-header {
         width: 80%;
     }
+
+    .how-card {
+        width: calc(50% - 7.5px);
+    }
 }
 
 @media (width < 500px) {
@@ -72,5 +80,17 @@
 
     section.landing img.landing-image {
         transform: translate(-50%, 100px);
+    }
+
+    .how-cards.container {
+        justify-content: center;
+    }
+
+    .how-card {
+        width: 80%;
+    }
+
+    .how-text.section-header {
+        padding-bottom: 0px !important;
     }
 }

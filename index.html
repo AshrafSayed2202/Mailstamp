@@ -24,8 +24,12 @@
             </span>
             <nav>
                 <ul>
-                    <li onclick="openMenu()"><a href="#how">How It Works</a></li>
-                    <li onclick="openMenu()"><a href="#features">Features</a></li>
+                    <li onclick="openMenu()">
+                        <a href="#how">How It Works</a>
+                    </li>
+                    <li onclick="openMenu()">
+                        <a href="#features">Features</a>
+                    </li>
                     <li onclick="openMenu()"><a href="#faqs">FAQs</a></li>
                 </ul>
             </nav>
@@ -63,7 +67,7 @@
                     class="landing-image"
                 />
             </section>
-            <!-- <section class="how" id="how">
+            <section class="how" id="how">
                 <div class="section-header">
                     <h1>how it works</h1>
                     <p>Setting up mailstamp is as simple as making noodles</p>
@@ -79,8 +83,8 @@
                             <h1>connect your email</h1>
                             <p>
                                 Getting started by connecting your email to
-                                mailstamp then your fees will be $10 by default, you
-                                can change it later!
+                                mailstamp then your fees will be $10 by default,
+                                you can change it later!
                             </p>
                         </div>
                     </div>
@@ -93,9 +97,9 @@
                         <div class="how-text section-header">
                             <h1>review email requests</h1>
                             <p>
-                                People that out of your network will be asked to pay
-                                your fee however, you will be able to refund/add
-                                them to whitelist.
+                                People that out of your network will be asked to
+                                pay your fee however, you will be able to
+                                refund/add them to whitelist.
                             </p>
                         </div>
                     </div>
@@ -108,14 +112,14 @@
                         <div class="how-text section-header">
                             <h1>track with numbers</h1>
                             <p>
-                                People that out of your network will be asked to pay
-                                your fee however, you will be able to refund/add
-                                them to whitelist.
+                                People that out of your network will be asked to
+                                pay your fee however, you will be able to
+                                refund/add them to whitelist.
                             </p>
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
             <!-- <section class="boost" id="features">
                 <div class="section-header">
                     <h1>
@@ -432,9 +436,11 @@
             </div>
         </footer> -->
         <script>
-            const openMenu = ()=>{
-                document.querySelector('header.container nav ul').classList.toggle('open')
-            }
+            const openMenu = () => {
+                document
+                    .querySelector("header.container nav ul")
+                    .classList.toggle("open");
+            };
             const collapse = (e) => {
                 const content = e.target.nextElementSibling;
                 if (content.classList.contains("extend")) {

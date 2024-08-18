@@ -98,12 +98,13 @@ header.container .nav-btn {
 
 .section-header {
     text-align: center;
-    width: 30%;
+    width: 100%;
     margin: auto;
 }
 
 section.landing .section-header {
     padding-top: 130px;
+    width: 25%;
 }
 
 .section-header h1 {
@@ -187,10 +188,6 @@ section.how .section-header {
 section.boost {
     background: linear-gradient(180deg, #DFE0FF 0%, #E2E3FF 0.01%, #ECF6FF 100%);
     padding: 120px 0;
-}
-
-section.boost .section-header {
-    width: 50%;
 }
 
 .boost-item {
@@ -467,4 +464,52 @@ section.boost .section-header {
 
 .main-btn.ten-btn h1 {
     font-size: 3rem;
+}
+
+section.faqs {
+    background: #FFFFFF;
+    padding: 100px 0;
+}
+
+.questions {
+    width: 50%;
+    margin: auto;
+}
+
+.question .ask {
+    padding: 20px;
+    transition: all 0.3s;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.question .ask i {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.question .ask.extend {
+    background: linear-gradient(151.54deg, rgba(97, 146, 219, 0.05) 14.21%, rgba(43, 52, 240, 0.05) 68.04%);
+}
+
+.question .ask.extend i {
+    rotate: 90deg;
+}
+
+.question .answer {
+    overflow: hidden;
+    height: 0;
+    transition: all 0.3s ease-in-out;
+    margin: 20px 50px;
 }

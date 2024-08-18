@@ -116,7 +116,10 @@
         </section>
         <section class="boost">
             <div class="section-header">
-                <h1>boost your emails to the top with mailstamp's</h1>
+                <h1>
+                    boost your emails to the <br />
+                    top with mailstamp's
+                </h1>
             </div>
             <div class="container">
                 <div class="boost-item">
@@ -292,5 +295,108 @@
                 </div>
             </div>
         </section>
+        <section class="faqs">
+            <div class="section-header">
+                <h1>frequently asked questions</h1>
+                <p>
+                    We may or may not be from the future, Here are the questions
+                    you were just about to ask us.
+                </p>
+            </div>
+            <div class="questions">
+                <div class="question">
+                    <div class="ask" onclick="collapse(event)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        How does the free trial work?
+                    </div>
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aut, id accusamus ut quas, voluptatibus quam aperiam
+                        temporibus quidem maxime, eos cumque inventore eligendi
+                        obcaecati doloribus vel perferendis placeat consequuntur
+                        delectus?
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="ask" onclick="collapse(event)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        What happens when my trial ends?
+                    </div>
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aut, id accusamus ut quas, voluptatibus quam aperiam
+                        temporibus quidem maxime, eos cumque inventore eligendi
+                        obcaecati doloribus vel perferendis placeat consequuntur
+                        delectus?
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="ask" onclick="collapse(event)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        When do I get billed?
+                    </div>
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aut, id accusamus ut quas, voluptatibus quam aperiam
+                        temporibus quidem maxime, eos cumque inventore eligendi
+                        obcaecati doloribus vel perferendis placeat consequuntur
+                        delectus?
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="ask" onclick="collapse(event)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        Can I cancel my subscription anytime?
+                    </div>
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aut, id accusamus ut quas, voluptatibus quam aperiam
+                        temporibus quidem maxime, eos cumque inventore eligendi
+                        obcaecati doloribus vel perferendis placeat consequuntur
+                        delectus?
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="ask" onclick="collapse(event)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        What happens if I lose my account details?
+                    </div>
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aut, id accusamus ut quas, voluptatibus quam aperiam
+                        temporibus quidem maxime, eos cumque inventore eligendi
+                        obcaecati doloribus vel perferendis placeat consequuntur
+                        delectus?
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="ask" onclick="collapse(event)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        Do I pay tax?
+                    </div>
+                    <div class="answer">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aut, id accusamus ut quas, voluptatibus quam aperiam
+                        temporibus quidem maxime, eos cumque inventore eligendi
+                        obcaecati doloribus vel perferendis placeat consequuntur
+                        delectus?
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            const collapse = (e) => {
+                const content = e.target.nextElementSibling;
+                if (content.classList.contains("extend")) {
+                    e.target.classList.remove("extend");
+                    content.classList.remove("extend");
+                    content.style.height = "0";
+                } else {
+                    e.target.classList.add("extend");
+                    content.classList.add("extend");
+                    content.style.height = content.scrollHeight + "px";
+                }
+            };
+        </script>
     </body>
 </html>

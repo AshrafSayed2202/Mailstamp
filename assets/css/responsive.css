@@ -73,6 +73,23 @@
     .how-card {
         width: calc(50% - 7.5px);
     }
+
+    .questions {
+        width: 80%;
+    }
+
+    .footer-image .section-header {
+        width: 90%;
+    }
+
+    .footer-image .section-header h1 {
+        font-size: 1.5rem;
+        letter-spacing: -1px;
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+    }
 }
 
 @media (width < 500px) {
@@ -106,5 +123,9 @@
 
     .boost-text {
         width: 250px;
+    }
+
+    footer .footer-end ul {
+        flex-direction: column;
     }
 }

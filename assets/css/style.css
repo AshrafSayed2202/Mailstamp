@@ -9,7 +9,6 @@
 
 img {
     object-fit: cover;
-    border: 1px solid #2B34F0;
 }
 
 html {
@@ -240,7 +239,6 @@ section.boost {
 
 .orb-image {
     animation: infiniteRotate 60s linear infinite;
-    opacity: 0;
 }
 
 @keyframes infiniteRotate {

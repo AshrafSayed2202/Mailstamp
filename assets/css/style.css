@@ -45,6 +45,7 @@ header.container {
     border: 1px solid #ECECED;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     z-index: 100;
     top: 15px;
@@ -54,6 +55,11 @@ header.container {
     border-radius: 35px;
     font-weight: 600;
     color: #0E0200
+}
+
+header.container i {
+    margin-left: 15px;
+    display: none;
 }
 
 span.logo,
@@ -493,8 +499,8 @@ section.faqs {
 }
 
 .question .ask i {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 2px solid;
     display: flex;

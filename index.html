@@ -24,9 +24,9 @@
             </span>
             <nav>
                 <ul>
-                    <li><a href="#">How It Works</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li onclick="openMenu()"><a href="#how">How It Works</a></li>
+                    <li onclick="openMenu()"><a href="#features">Features</a></li>
+                    <li onclick="openMenu()"><a href="#faqs">FAQs</a></li>
                 </ul>
             </nav>
             <span class="nav-btn">
@@ -35,356 +35,359 @@
                     Get Started - It's Free
                 </button>
             </span>
+            <i class="fa-solid fa-bars-staggered" onclick="openMenu()"></i>
         </header>
-        <section class="landing">
-            <div class="section-header">
-                <h1>
-                    <span>monetize</span>
-                    your spam inbox
-                </h1>
-                <p>
-                    From spam box to money box with mailstamp, made for
-                    professionals that want to organize and monetize.
-                </p>
-                <button type="button" class="main-btn">
-                    Get Started - It's Free
-                </button>
-            </div>
-            <img
-                src="/assets/images/landing-wave.png"
-                alt="landing wave"
-                class="wave"
-            />
-            <img
-                src="/assets/images/landing-image.png"
-                alt="landing wave"
-                class="landing-image"
-            />
-        </section>
-        <section class="how">
-            <div class="section-header">
-                <h1>how it works</h1>
-                <p>Setting up mailstamp is as simple as making noodles</p>
-            </div>
-            <div class="how-cards container">
-                <div class="how-card">
-                    <img
-                        src="/assets/images/how-1.png"
-                        alt="how card"
-                        class="how"
-                    />
-                    <div class="how-text section-header">
-                        <h1>connect your email</h1>
-                        <p>
-                            Getting started by connecting your email to
-                            mailstamp then your fees will be $10 by default, you
-                            can change it later!
-                        </p>
-                    </div>
+        <main>
+            <section class="landing">
+                <div class="section-header">
+                    <h1>
+                        <span>monetize</span>
+                        your spam inbox
+                    </h1>
+                    <p>
+                        From spam box to money box with mailstamp, made for
+                        professionals that want to organize and monetize.
+                    </p>
+                    <button type="button" class="main-btn">
+                        Get Started - It's Free
+                    </button>
                 </div>
-                <div class="how-card">
-                    <img
-                        src="/assets/images/how-2.png"
-                        alt="how card"
-                        class="how"
-                    />
-                    <div class="how-text section-header">
-                        <h1>review email requests</h1>
-                        <p>
-                            People that out of your network will be asked to pay
-                            your fee however, you will be able to refund/add
-                            them to whitelist.
-                        </p>
-                    </div>
+                <img
+                    src="/assets/images/landing-wave.png"
+                    alt="landing wave"
+                    class="wave"
+                />
+                <img
+                    src="/assets/images/landing-image.png"
+                    alt="landing wave"
+                    class="landing-image"
+                />
+            </section>
+            <!-- <section class="how" id="how">
+                <div class="section-header">
+                    <h1>how it works</h1>
+                    <p>Setting up mailstamp is as simple as making noodles</p>
                 </div>
-                <div class="how-card">
-                    <img
-                        src="/assets/images/how-3.png"
-                        alt="how card"
-                        class="how"
-                    />
-                    <div class="how-text section-header">
-                        <h1>track with numbers</h1>
-                        <p>
-                            People that out of your network will be asked to pay
-                            your fee however, you will be able to refund/add
-                            them to whitelist.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="boost">
-            <div class="section-header">
-                <h1>
-                    boost your emails to the <br />
-                    top with mailstamp's
-                </h1>
-            </div>
-            <div class="container">
-                <div class="boost-item">
-                    <div class="boost-text">
-                        <h3>if the client out of your network</h3>
-                        <p>
-                            Getting started by connecting your email to
-                            mailstamp then your fees will be $10 by default, you
-                            can change it later!
-                        </p>
-                    </div>
-                    <div class="orb">
+                <div class="how-cards container">
+                    <div class="how-card">
                         <img
-                            src="/assets/images/boost-orb.png"
-                            alt="orb"
-                            class="orb-image"
+                            src="/assets/images/how-1.png"
+                            alt="how card"
+                            class="how"
                         />
-                        <div class="orb-card">
-                            <div class="to">
-                                To /
-                                <div class="user">
-                                    <img
-                                        src="/assets/images/user-pic.png"
-                                        alt="user picture"
-                                        class="user-image"
-                                    />
-                                    <div>
-                                        <h4>ahmed wahba</h4>
-                                        <span>Me@thisiswahba.com</span>
+                        <div class="how-text section-header">
+                            <h1>connect your email</h1>
+                            <p>
+                                Getting started by connecting your email to
+                                mailstamp then your fees will be $10 by default, you
+                                can change it later!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="how-card">
+                        <img
+                            src="/assets/images/how-2.png"
+                            alt="how card"
+                            class="how"
+                        />
+                        <div class="how-text section-header">
+                            <h1>review email requests</h1>
+                            <p>
+                                People that out of your network will be asked to pay
+                                your fee however, you will be able to refund/add
+                                them to whitelist.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="how-card">
+                        <img
+                            src="/assets/images/how-3.png"
+                            alt="how card"
+                            class="how"
+                        />
+                        <div class="how-text section-header">
+                            <h1>track with numbers</h1>
+                            <p>
+                                People that out of your network will be asked to pay
+                                your fee however, you will be able to refund/add
+                                them to whitelist.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- <section class="boost" id="features">
+                <div class="section-header">
+                    <h1>
+                        boost your emails to the <br />
+                        top with mailstamp's
+                    </h1>
+                </div>
+                <div class="container">
+                    <div class="boost-item">
+                        <div class="boost-text">
+                            <h3>if the client out of your network</h3>
+                            <p>
+                                Getting started by connecting your email to
+                                mailstamp then your fees will be $10 by default, you
+                                can change it later!
+                            </p>
+                        </div>
+                        <div class="orb">
+                            <img
+                                src="/assets/images/boost-orb.png"
+                                alt="orb"
+                                class="orb-image"
+                            />
+                            <div class="orb-card">
+                                <div class="to">
+                                    To /
+                                    <div class="user">
+                                        <img
+                                            src="/assets/images/user-pic.png"
+                                            alt="user picture"
+                                            class="user-image"
+                                        />
+                                        <div>
+                                            <h4>ahmed wahba</h4>
+                                            <span>Me@thisiswahba.com</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="subject">
-                                Subject / <b> pitch useresearch / seed round</b>
-                            </div>
-                            <p class="parag">
-                                Hi Mohamed, I hope this email finds you well!
-                                It's been a while since we last caughtup, and
-                                I've been thinking about our last conversation.
-                                <br /><br />
-                                How have you been? I'd love to reconnect and
-                                hear about what's new in your world.
-                                <br /><br />
-                                How about grabbing a coffee sometime next week?
-                                I'm flexible with my schedule, so let me know
-                                when works for you. Looking forward to catching
-                                up and hearing all about your latest adventures.
-                                <br /><br />
-                                Best,<br />
-                                Wahba
-                            </p>
-                            <div class="orb-foot">
-                                <span class="warning">
-                                    <i
-                                        class="fa-solid fa-triangle-exclamation"
-                                    ></i>
-                                    This email is out of your network!
-                                </span>
-                                <span class="main-btn send">SEND</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boost-item">
-                    <div class="boost-text">
-                        <h3>your email will go to mailstamp inbox</h3>
-                        <p>
-                            Getting started by connecting your email to
-                            mailstamp then your fees will be $10 by default, you
-                            can change it later!
-                        </p>
-                    </div>
-                    <div class="orb">
-                        <img
-                            src="/assets/images/boost-orb.png"
-                            alt="orb"
-                            class="orb-image"
-                        />
-                        <div class="orb-card">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <div class="priority">
-                                <span class="logo">
-                                    <img
-                                        src="assets/images/logo.png"
-                                        alt="logo"
-                                    />
-                                    <p>mailstamp</p>
-                                </span>
+                                <div class="subject">
+                                    Subject / <b> pitch useresearch / seed round</b>
+                                </div>
                                 <p class="parag">
-                                    Hi Sara,
+                                    Hi Mohamed, I hope this email finds you well!
+                                    It's been a while since we last caughtup, and
+                                    I've been thinking about our last conversation.
                                     <br /><br />
-                                    Thank you for reaching out to Wahba!
+                                    How have you been? I'd love to reconnect and
+                                    hear about what's new in your world.
                                     <br /><br />
-                                    To ensure a focused and secure communication
-                                    experience, Wahba has implemented
-                                    MailStamp's Priority Access feature.
+                                    How about grabbing a coffee sometime next week?
+                                    I'm flexible with my schedule, so let me know
+                                    when works for you. Looking forward to catching
+                                    up and hearing all about your latest adventures.
                                     <br /><br />
-                                    That means your email will not be delivered
-                                    until, you verify yourself, we invite you to
-                                    unlock Priority Access.
+                                    Best,<br />
+                                    Wahba
                                 </p>
-                                <span class="main-btn priority-btn">
-                                    UNLOCK PRIORITY ACCESS
+                                <div class="orb-foot">
+                                    <span class="warning">
+                                        <i
+                                            class="fa-solid fa-triangle-exclamation"
+                                        ></i>
+                                        This email is out of your network!
+                                    </span>
+                                    <span class="main-btn send">SEND</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boost-item">
+                        <div class="boost-text">
+                            <h3>your email will go to mailstamp inbox</h3>
+                            <p>
+                                Getting started by connecting your email to
+                                mailstamp then your fees will be $10 by default, you
+                                can change it later!
+                            </p>
+                        </div>
+                        <div class="orb">
+                            <img
+                                src="/assets/images/boost-orb.png"
+                                alt="orb"
+                                class="orb-image"
+                            />
+                            <div class="orb-card">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <div class="priority">
+                                    <span class="logo">
+                                        <img
+                                            src="assets/images/logo.png"
+                                            alt="logo"
+                                        />
+                                        <p>mailstamp</p>
+                                    </span>
+                                    <p class="parag">
+                                        Hi Sara,
+                                        <br /><br />
+                                        Thank you for reaching out to Wahba!
+                                        <br /><br />
+                                        To ensure a focused and secure communication
+                                        experience, Wahba has implemented
+                                        MailStamp's Priority Access feature.
+                                        <br /><br />
+                                        That means your email will not be delivered
+                                        until, you verify yourself, we invite you to
+                                        unlock Priority Access.
+                                    </p>
+                                    <span class="main-btn priority-btn">
+                                        UNLOCK PRIORITY ACCESS
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boost-item">
+                        <div class="boost-text">
+                            <h3>pay the fee and get at the top of their inbox</h3>
+                            <p>
+                                Getting started by connecting your email to
+                                mailstamp then your fees will be $10 by default, you
+                                can change it later!
+                            </p>
+                        </div>
+                        <div class="orb">
+                            <img
+                                src="/assets/images/boost-orb.png"
+                                alt="orb"
+                                class="orb-image"
+                            />
+                            <div class="orb-card last">
+                                <p>Choose how you'd like to pay</p>
+                                <div class="payment-methods">
+                                    <div class="method">
+                                        <i class="fa-solid fa-credit-card"></i>
+                                        Card
+                                    </div>
+                                    <div class="method">
+                                        <img
+                                            src="/assets/images/giropay.png"
+                                            alt="Giropay"
+                                            width="22px"
+                                            height="16px"
+                                        />Giropay
+                                    </div>
+                                    <div class="method">
+                                        <img
+                                            src="/assets/images/paypal.png"
+                                            alt="PayPal"
+                                            width="16px"
+                                            height="16px"
+                                        />PayPal
+                                    </div>
+                                    <div class="method">...</div>
+                                </div>
+                                <p>Card information</p>
+                                <div class="inputs">
+                                    <div class="input">
+                                        4242 4242 4242 4242<i
+                                            class="fa-brands fa-cc-visa"
+                                        ></i>
+                                    </div>
+                                    <div class="input">
+                                        12 / 24<i class="fa-solid fa-calendar"></i>
+                                    </div>
+                                    <div class="input">
+                                        123<i class="fa-regular fa-credit-card"></i>
+                                    </div>
+                                </div>
+                                <span class="pay-btn"
+                                    >Pay $10<i class="fa-solid fa-lock"></i
+                                ></span>
+                                <span class="main-btn ten-btn">
+                                    <p>you're request to pay</p>
+                                    <h1>10$</h1>
                                 </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="boost-item">
-                    <div class="boost-text">
-                        <h3>pay the fee and get at the top of their inbox</h3>
-                        <p>
-                            Getting started by connecting your email to
-                            mailstamp then your fees will be $10 by default, you
-                            can change it later!
-                        </p>
+            </section> -->
+            <!-- <section class="faqs" id="faqs">
+                <div class="section-header">
+                    <h1>frequently asked questions</h1>
+                    <p>
+                        We may or may not be from the future, Here are the questions
+                        you were just about to ask us.
+                    </p>
+                </div>
+                <div class="questions">
+                    <div class="question">
+                        <div class="ask" onclick="collapse(event)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            How does the free trial work?
+                        </div>
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aut, id accusamus ut quas, voluptatibus quam aperiam
+                            temporibus quidem maxime, eos cumque inventore eligendi
+                            obcaecati doloribus vel perferendis placeat consequuntur
+                            delectus?
+                        </div>
                     </div>
-                    <div class="orb">
-                        <img
-                            src="/assets/images/boost-orb.png"
-                            alt="orb"
-                            class="orb-image"
-                        />
-                        <div class="orb-card last">
-                            <p>Choose how you'd like to pay</p>
-                            <div class="payment-methods">
-                                <div class="method">
-                                    <i class="fa-solid fa-credit-card"></i>
-                                    Card
-                                </div>
-                                <div class="method">
-                                    <img
-                                        src="/assets/images/giropay.png"
-                                        alt="Giropay"
-                                        width="22px"
-                                        height="16px"
-                                    />Giropay
-                                </div>
-                                <div class="method">
-                                    <img
-                                        src="/assets/images/paypal.png"
-                                        alt="PayPal"
-                                        width="16px"
-                                        height="16px"
-                                    />PayPal
-                                </div>
-                                <div class="method">...</div>
-                            </div>
-                            <p>Card information</p>
-                            <div class="inputs">
-                                <div class="input">
-                                    4242 4242 4242 4242<i
-                                        class="fa-brands fa-cc-visa"
-                                    ></i>
-                                </div>
-                                <div class="input">
-                                    12 / 24<i class="fa-solid fa-calendar"></i>
-                                </div>
-                                <div class="input">
-                                    123<i class="fa-regular fa-credit-card"></i>
-                                </div>
-                            </div>
-                            <span class="pay-btn"
-                                >Pay $10<i class="fa-solid fa-lock"></i
-                            ></span>
-                            <span class="main-btn ten-btn">
-                                <p>you're request to pay</p>
-                                <h1>10$</h1>
-                            </span>
+                    <div class="question">
+                        <div class="ask" onclick="collapse(event)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            What happens when my trial ends?
+                        </div>
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aut, id accusamus ut quas, voluptatibus quam aperiam
+                            temporibus quidem maxime, eos cumque inventore eligendi
+                            obcaecati doloribus vel perferendis placeat consequuntur
+                            delectus?
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="ask" onclick="collapse(event)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            When do I get billed?
+                        </div>
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aut, id accusamus ut quas, voluptatibus quam aperiam
+                            temporibus quidem maxime, eos cumque inventore eligendi
+                            obcaecati doloribus vel perferendis placeat consequuntur
+                            delectus?
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="ask" onclick="collapse(event)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Can I cancel my subscription anytime?
+                        </div>
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aut, id accusamus ut quas, voluptatibus quam aperiam
+                            temporibus quidem maxime, eos cumque inventore eligendi
+                            obcaecati doloribus vel perferendis placeat consequuntur
+                            delectus?
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="ask" onclick="collapse(event)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            What happens if I lose my account details?
+                        </div>
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aut, id accusamus ut quas, voluptatibus quam aperiam
+                            temporibus quidem maxime, eos cumque inventore eligendi
+                            obcaecati doloribus vel perferendis placeat consequuntur
+                            delectus?
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="ask" onclick="collapse(event)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Do I pay tax?
+                        </div>
+                        <div class="answer">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aut, id accusamus ut quas, voluptatibus quam aperiam
+                            temporibus quidem maxime, eos cumque inventore eligendi
+                            obcaecati doloribus vel perferendis placeat consequuntur
+                            delectus?
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="faqs">
-            <div class="section-header">
-                <h1>frequently asked questions</h1>
-                <p>
-                    We may or may not be from the future, Here are the questions
-                    you were just about to ask us.
-                </p>
-            </div>
-            <div class="questions">
-                <div class="question">
-                    <div class="ask" onclick="collapse(event)">
-                        <i class="fa-solid fa-chevron-right"></i>
-                        How does the free trial work?
-                    </div>
-                    <div class="answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut, id accusamus ut quas, voluptatibus quam aperiam
-                        temporibus quidem maxime, eos cumque inventore eligendi
-                        obcaecati doloribus vel perferendis placeat consequuntur
-                        delectus?
-                    </div>
-                </div>
-                <div class="question">
-                    <div class="ask" onclick="collapse(event)">
-                        <i class="fa-solid fa-chevron-right"></i>
-                        What happens when my trial ends?
-                    </div>
-                    <div class="answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut, id accusamus ut quas, voluptatibus quam aperiam
-                        temporibus quidem maxime, eos cumque inventore eligendi
-                        obcaecati doloribus vel perferendis placeat consequuntur
-                        delectus?
-                    </div>
-                </div>
-                <div class="question">
-                    <div class="ask" onclick="collapse(event)">
-                        <i class="fa-solid fa-chevron-right"></i>
-                        When do I get billed?
-                    </div>
-                    <div class="answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut, id accusamus ut quas, voluptatibus quam aperiam
-                        temporibus quidem maxime, eos cumque inventore eligendi
-                        obcaecati doloribus vel perferendis placeat consequuntur
-                        delectus?
-                    </div>
-                </div>
-                <div class="question">
-                    <div class="ask" onclick="collapse(event)">
-                        <i class="fa-solid fa-chevron-right"></i>
-                        Can I cancel my subscription anytime?
-                    </div>
-                    <div class="answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut, id accusamus ut quas, voluptatibus quam aperiam
-                        temporibus quidem maxime, eos cumque inventore eligendi
-                        obcaecati doloribus vel perferendis placeat consequuntur
-                        delectus?
-                    </div>
-                </div>
-                <div class="question">
-                    <div class="ask" onclick="collapse(event)">
-                        <i class="fa-solid fa-chevron-right"></i>
-                        What happens if I lose my account details?
-                    </div>
-                    <div class="answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut, id accusamus ut quas, voluptatibus quam aperiam
-                        temporibus quidem maxime, eos cumque inventore eligendi
-                        obcaecati doloribus vel perferendis placeat consequuntur
-                        delectus?
-                    </div>
-                </div>
-                <div class="question">
-                    <div class="ask" onclick="collapse(event)">
-                        <i class="fa-solid fa-chevron-right"></i>
-                        Do I pay tax?
-                    </div>
-                    <div class="answer">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aut, id accusamus ut quas, voluptatibus quam aperiam
-                        temporibus quidem maxime, eos cumque inventore eligendi
-                        obcaecati doloribus vel perferendis placeat consequuntur
-                        delectus?
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
+            </section> -->
+        </main>
+        <!-- <footer>
             <div class="container">
                 <span class="logo">
                     <img src="assets/images/white-logo.png" alt="logo" />
@@ -409,7 +412,7 @@
                     <ul>
                         <li><a href="#terms">Terms & Conditions</a></li>
                         <li><a href="#cookies">Cookies</a></li>
-                        <li><a href="#Privacy">Privacy Policy</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -427,8 +430,11 @@
                     </button>
                 </div>
             </div>
-        </footer>
+        </footer> -->
         <script>
+            const openMenu = ()=>{
+                document.querySelector('header.container nav ul').classList.toggle('open')
+            }
             const collapse = (e) => {
                 const content = e.target.nextElementSibling;
                 if (content.classList.contains("extend")) {

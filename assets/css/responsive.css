@@ -46,12 +46,18 @@
         top: -17px;
         height: 100vh;
         width: 50vw;
-        background-color: #eee;
-        border: 1px solid;
-        justify-content: space-around;
+        background-image: linear-gradient(160.21deg, #8061DB 14.88%, #2B34F0 96.45%);
+        justify-content: start;
+        padding-top: 50px;
         right: 0;
         transform: translateX(100%);
         transition: all 0.3s;
+        gap: 20px;
+        font-size: larger;
+    }
+
+    header.container nav ul li a {
+        color: white;
     }
 
     header.container nav ul.open {

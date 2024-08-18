@@ -27,6 +27,12 @@
     section.landing .section-header {
         width: 50%;
     }
+
+    .boost-item {
+        flex-direction: column;
+        gap: 40px;
+    }
+
 }
 
 @media (width < 769px) {
@@ -92,5 +98,13 @@
 
     .how-text.section-header {
         padding-bottom: 0px !important;
+    }
+
+    .orb-card {
+        width: 50%;
+    }
+
+    .boost-text {
+        width: 250px;
     }
 }

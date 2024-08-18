@@ -108,7 +108,7 @@ section.landing {
 
 .section-header {
     text-align: center;
-    width: 100%;
+    width: 95%;
     margin: auto;
 }
 
@@ -198,6 +198,7 @@ section.how .section-header {
 section.boost {
     background: linear-gradient(180deg, #DFE0FF 0%, #E2E3FF 0.01%, #ECF6FF 100%);
     padding: 120px 0;
+    overflow: hidden;
 }
 
 .boost-item {
@@ -239,6 +240,7 @@ section.boost {
 
 .orb-image {
     animation: infiniteRotate 60s linear infinite;
+    opacity: 0;
 }
 
 @keyframes infiniteRotate {

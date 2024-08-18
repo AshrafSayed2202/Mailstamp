@@ -96,6 +96,10 @@ header.container .nav-btn {
     gap: 15px;
 }
 
+section.landing {
+    padding-bottom: 150px;
+}
+
 .section-header {
     text-align: center;
     width: 100%;
@@ -145,7 +149,7 @@ section.landing img.landing-image {
 }
 
 section.how {
-    padding-top: 300px;
+    padding-top: 150px;
     background-color: #FFFFFF;
 }
 
@@ -468,7 +472,7 @@ section.boost {
 
 section.faqs {
     background: #FFFFFF;
-    padding: 100px 0;
+    padding: 100px 0px 300px 0px;
 }
 
 .questions {
@@ -512,4 +516,68 @@ section.faqs {
     height: 0;
     transition: all 0.3s ease-in-out;
     margin: 20px 50px;
+}
+
+footer {
+    background: #3B50EA;
+    color: white;
+    padding: 300px 40px 0px 40px;
+    position: relative;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 35px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+footer ul li a,
+footer a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 10px;
+}
+
+.footer-end .dev {
+    text-decoration: underline;
+}
+
+.footer-image {
+    left: 50%;
+    bottom: calc(100% - 250px);
+    transform: translateX(-50%);
+    width: 70%;
+    height: 500px;
+    background-image: url(/assets/images/footer-image.png);
+    position: absolute;
+    border-radius: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-image .section-header {
+    width: 60%;
+    color: #1A1A1A;
 }

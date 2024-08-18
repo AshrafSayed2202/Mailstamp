@@ -575,7 +575,7 @@ footer ul li:hover {
     transform: translateX(-50%);
     width: 70%;
     height: 500px;
-    background-image: url(/assets/images/footer-image.png);
+    background-image: url(../images/footer-image.png);
     position: absolute;
     border-radius: 53px;
     display: flex;

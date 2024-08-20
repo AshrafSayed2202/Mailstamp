@@ -25,13 +25,13 @@
             </span>
             <nav>
                 <ul>
-                    <li onclick="openMenu()">
+                    <li onclick="closeMenu()">
                         <a href="#how">How It Works</a>
                     </li>
-                    <li onclick="openMenu()">
+                    <li onclick="closeMenu()">
                         <a href="#features">Features</a>
                     </li>
-                    <li onclick="openMenu()"><a href="#faqs">FAQs</a></li>
+                    <li onclick="closeMenu()"><a href="#faqs">FAQs</a></li>
                 </ul>
             </nav>
             <span class="nav-btn">
@@ -40,7 +40,7 @@
                     Get Started - It's Free
                 </button>
             </span>
-            <i class="fa-solid fa-bars-staggered" onclick="openMenu()"></i>
+            <i class="fa-solid fa-bars-staggered"></i>
         </header>
         <main>
             <section class="landing">
@@ -136,7 +136,11 @@
                                 alt="orb"
                                 class="orb-image"
                             />
-                            <img src="./assets/images/boost-img-1.png" alt="boost card 1" class="orb-card">
+                            <img
+                                src="./assets/images/boost-img-1.png"
+                                alt="boost card 1"
+                                class="orb-card"
+                            />
                         </div>
                     </div>
                     <div class="boost-item">
@@ -154,7 +158,11 @@
                                 alt="orb"
                                 class="orb-image"
                             />
-                            <img src="./assets/images/boost-img-2.png" alt="boost card 2" class="orb-card">
+                            <img
+                                src="./assets/images/boost-img-2.png"
+                                alt="boost card 2"
+                                class="orb-card"
+                            />
                         </div>
                     </div>
                     <div class="boost-item">
@@ -174,7 +182,11 @@
                                 alt="orb"
                                 class="orb-image"
                             />
-                            <img src="./assets/images/boost-img-3.png" alt="boost card 3" class="orb-card">
+                            <img
+                                src="./assets/images/boost-img-3.png"
+                                alt="boost card 3"
+                                class="orb-card"
+                            />
                         </div>
                     </div>
                 </div>
@@ -309,11 +321,23 @@
             </div>
         </footer>
         <script>
+            const menu = document.querySelector("header.container nav ul");
+            const menuToggle = document.querySelector("header.container i");
             const openMenu = () => {
-                document
-                    .querySelector("header.container nav ul")
-                    .classList.toggle("open");
+                menu.classList.add("open");
             };
+            const closeMenu = () => {
+                menu.classList.remove("open");
+            };
+            window.addEventListener("click", (e) => {
+                if (!menu.contains(e.target) && e.target !== menuToggle) {
+                    closeMenu();
+                }
+            });
+            menuToggle.addEventListener("click", (e) => {
+                e.stopPropagation();
+                openMenu();
+            });
             const collapse = (e) => {
                 const content = e.target.nextElementSibling;
                 if (content.classList.contains("extend")) {

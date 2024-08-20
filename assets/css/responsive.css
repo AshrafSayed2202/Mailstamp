@@ -33,6 +33,10 @@
         gap: 40px;
     }
 
+    .sign-up,
+    .sign-up .main-btn {
+        width: 95%;
+    }
 }
 
 @media (width < 769px) {
@@ -96,6 +100,14 @@
     footer ul {
         flex-wrap: wrap;
     }
+
+    .signup-container .right-side {
+        display: none;
+    }
+
+    .signup-container .left-side {
+        width: 100%;
+    }
 }
 
 @media (width < 500px) {
@@ -137,5 +149,14 @@
 
     footer .footer-end ul {
         flex-direction: column;
+    }
+
+    .sign-up .section-header h1 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .sign-up .main-btn {
+        font-size: 10px;
     }
 }

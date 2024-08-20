@@ -1,0 +1,98 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+    width: 60%;
+    background-color: #FFFFFF;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up {
+    border: 1px solid #00000014;
+    padding: 60px 45px;
+    border-radius: 23px;
+    width: 65%;
+    margin: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sign-up div span {
+    background: linear-gradient(180deg, #F7F9FD 37.5%, #FFFFFF 100%);
+    width: 13px;
+    height: 40px;
+    display: inline-block;
+    rotate: 180deg;
+    border-radius: 6px;
+}
+
+.sign-up .section-header h1,
+.sign-up .section-header p {
+    margin-bottom: 10px;
+}
+
+.sign-up .main-btn {
+    width: 65%;
+    color: #1A1A1A;
+    font-weight: 900;
+    background: linear-gradient(151.54deg, rgba(97, 146, 219, 0.12) 14.21%, rgba(43, 52, 240, 0.12) 68.04%);
+    border: 2px solid #2B34F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.left-side a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right-side {
+    width: 40%;
+    background-image: url(../images/sign-up-landing.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.landing.active {
+    opacity: 1;
+}

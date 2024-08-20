@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <link rel="stylesheet" href="../assets/css/signup.css" />
+        <link rel="stylesheet" href="../assets/css/responsive.css" />
+        <link
+            rel="shortcut icon"
+            href="../assets/images/logo.png"
+            type="image/x-icon"
+        />
+        <title>MailStamp - SignUp</title>
+    </head>
+<body>
+    <div class="signup-container">
+        <div class="left-side">
+            <span class="logo">
+                <img src="../assets/images/logo.png" alt="logo" />
+                <p>mailstamp</p>
+            </span>
+            <div class="sign-up">
+                <div class="section-header">
+                    <h1>get started with mailstamp</h1>
+                    <p>Let's make magic happen! Ready to begin?</p>
+                </div>
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button type="button" class="main-btn">
+                    <img src="../assets/images/google.png" alt="">
+                    CONNECT WITH GMAIL
+                </button>
+                <p>by connecting your email, you agree to the MailStamp <a href="#terms">terms & conditions</a></p>
+            </div>
+            <p>Already using MailStamp? <a href="#log-in">Log in</a></p>
+        </div>
+        <div class="right-side">
+            <div class="landing" id="landing1">
+                <div class="section-header">
+                    <h1>access your mailstamp requests</h1>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    <div>
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <img src="../assets/images/sign-up-fig-1.png" alt="mailstamp app">
+            </div>
+            <div class="landing" id="landing2">
+                <div class="section-header">
+                    <h1>add your preferred fees per email</h1>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    <div>
+                        <span></span>
+                        <span class="active"></span>
+                        <span></span>
+                    </div>
+                </div>
+                <img src="../assets/images/sign-up-fig-2.png" alt="mailstamp app">
+            </div>
+            <div class="landing" id="landing3">
+                <div class="section-header">
+                    <h1>see your progress in numbers</h1>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span class="active"></span>
+                    </div>
+                </div>
+                <img src="../assets/images/sign-up-fig-3.png" alt="mailstamp app">
+            </div>
+        </div>
+    </div>
+    <script>
+        const landings = document.querySelectorAll('.landing');
+        let currentLanding = 0;
+        function changeLanding() {
+            landings[currentLanding].classList.remove('active');
+            currentLanding = (currentLanding + 1) % landings.length;
+            landings[currentLanding].classList.add('active');
+        }
+        landings[currentLanding].classList.add('active');
+        setInterval(changeLanding, 10000);
+    </script>
+</body>
+</html>

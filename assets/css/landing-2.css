@@ -1,0 +1,33 @@
+header.container {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+section.landing {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 0;
+    align-items: start;
+}
+
+section.landing .section-header {
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
+}
+
+section.landing .section-header .main-btn {
+    position: absolute;
+}
+
+section.landing img.landing-image {
+    right: 0;
+    left: auto;
+    transform: none;
+}
+
+@media (width < 768px) {
+    section.landing img.landing-image {
+        display: none;
+    }
+}

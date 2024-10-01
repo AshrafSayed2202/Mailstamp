@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(180deg, #DFE0FF 0%, #E2E3FF 0.01%, #ECF6FF 100%);
+    height: 100vh;
+
+}
+
+header.container {
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-btn.new-btn {
+    background: transparent;
+    color: #2B34F0;
+    border: 2px solid;
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.unlock {
+    height: calc(100vh - 100px);
+    max-height: 600px;
+    max-width: 500px;
+    position: relative;
+    top: 100px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+section.unlock h1 {
+    font-size: 31px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}

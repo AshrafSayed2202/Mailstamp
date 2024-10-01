@@ -22,7 +22,9 @@ section.unlock {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     padding: 25px;
+    text-align: center;
 }
 
 .unlock .greetings {
@@ -38,8 +40,11 @@ section.unlock {
 }
 
 .unlock-txt {
-    text-align: center;
     margin-bottom: 20px;
     color: #000;
     font-size: 16px;
+}
+
+.copyright-txt {
+    font-size: 11px;
 }

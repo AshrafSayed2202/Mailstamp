@@ -104,3 +104,19 @@ section.unlock h1 {
     color: #0E0200B2;
     font-size: 13px;
 }
+
+.how-works-btn {
+    align-self: center;
+}
+
+.how-works-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #000;
+    border: 2px solid;
+    border-color: #2B34F0;
+    padding: 15px 30px;
+    background: linear-gradient(151.54deg, rgba(97, 146, 219, 0.12) 14.21%, rgba(43, 52, 240, 0.12) 68.04%);
+}
